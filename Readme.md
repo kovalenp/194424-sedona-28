@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Pavel Kovalenko](https://up.htmlacademy.ru/htmlcss/28/user/194424).
-* Наставник: `Неизвестно`.
+- Студент: [Pavel Kovalenko](https://up.htmlacademy.ru/htmlcss/28/user/194424).
+- Наставник: [Дмитрий (sench) Железцов](https://htmlacademy.ru/profile/sench).
 
 ---
 
