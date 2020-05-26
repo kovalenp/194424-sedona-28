@@ -122,7 +122,61 @@
         <div>
           <div>
             <button type="button">Поиск гостиницы в Седоне</button>
-            <!-- Форма поиска -->
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <div>
+                <label for="check-in">Дата заезда:</label>
+                <input
+                  id="check-in"
+                  type="text"
+                  name="check-in-date"
+                  placeholder="24 апреля 2020"
+                />
+                <img
+                  src="img/svg/calendar.svg"
+                  width="21"
+                  height="23"
+                  alt="Календарь"
+                />
+              </div>
+              <div>
+                <label for="check-out">Дата выезда:</label>
+                <input
+                  id="check-out"
+                  type="text"
+                  name="check--date"
+                  placeholder="4 июля 2020"
+                />
+                <img
+                  src="img/svg/calendar.svg"
+                  width="21"
+                  height="23"
+                  alt="Календарь"
+                />
+              </div>
+              <div>
+                <label for="adults">Взрослые:</label>
+                <button type="button">-</button>
+                <input
+                  id="adults"
+                  type="number"
+                  name="adults-number"
+                  placeholder="2"
+                />
+                <button type="button">+</button>
+              </div>
+              <div>
+                <label for="children">Дети:</label>
+                <button type="button">-</button>
+                <input
+                  id="children"
+                  type="number"
+                  name="children-number"
+                  placeholder="0"
+                />
+                <button type="button">+</button>
+              </div>
+              <button type="submit">Найти</button>
+            </form>
           </div>
         </div>
       </section>
