@@ -47,7 +47,7 @@ a {
   text-decoration: none;
 }
 
-ul {
+.main-nav ul {
   list-style-type: none;
 }
 
@@ -59,6 +59,8 @@ ul {
   background-color: var(--basic-white);
 }
 
+/* Navigation */
+
 .nav-main {
   line-height: 26px;
   background-color: var(--basic-white);
@@ -67,6 +69,12 @@ ul {
 
 .nav-main a {
   color: var(--basic-black);
+}
+
+.nav-main ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-main a:hover,
@@ -172,8 +180,7 @@ button {
   background-color: var(--basic-brown-light);
 }
 
-.button-brown:hover,
-.button-brown:focus {
+.button-brown:hover {
   color: var(--basic-white);
   background-color: var(--basic-brown);
 }
@@ -193,12 +200,10 @@ button {
 }
 
 .button-more {
-  color: var(--basic-white);
   padding: 3px 16px 3px 17px;
 }
 
 .button-book {
-  color: var(--basic-white);
   padding: 3px 17px 3px 16px;
 }
 
@@ -207,10 +212,22 @@ button {
   width: 48px;
   background-color: var(--basic-blue-light);
   display: inline-block;
-  text-align: center;
-  vertical-align: middle;
 }
 
+.twitter {
+  margin-top: 16px;
+  margin-left: 15px;
+  margin-right: 14px;
+  margin-bottom: 15px;
+}
+
+.fb {
+  margin: 13px 17px;
+}
+
+.youtube {
+  margin: 16px 13px;
+}
 /* Footer */
 
 .contacts {
@@ -223,6 +240,15 @@ button {
   color: var(--basic-black);
 }
 
-.academy-logo:hover {
-  color: var(--basic-blue-light);
+.academy-logo {
+  height: 41px;
+  width: 115px;
+}
+
+/* svg:hover path {
+  fill: red;
+} */
+
+.academy-logo:hover path {
+  fill: var(--basic-blue-light);
 }
