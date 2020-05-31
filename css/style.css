@@ -81,7 +81,6 @@ ul {
 }
 
 .main-title {
-  font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -97,7 +96,6 @@ ul {
 .feature-item h3 {
   font-size: 21px;
   font-weight: bold;
-  font-style: normal;
   line-height: 21px;
 }
 
@@ -109,7 +107,6 @@ ul {
 
 .hotel-items h3 {
   color: var(--basic-black);
-  font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -121,6 +118,25 @@ ul {
   width: 110px;
   height: 27px;
   padding: 3px 12px 3px 15px;
+}
+
+/* Booking */
+
+.booking {
+  text-align: center;
+  background-color: var(--basic-white);
+}
+
+.booking-title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.booking-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 /* Button */
@@ -170,7 +186,6 @@ button {
 }
 
 .button-hotels {
-  font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -199,7 +214,6 @@ button {
 /* Footer */
 
 .contacts {
-  font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
