@@ -2,20 +2,25 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>City of Sedonа</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="#">
-          <img
-            src="img/svg/logo-sedona.svg"
-            width="138"
-            height="70"
-            alt="Седона"
-          />
-        </a>
+    <header class="header">
+      <a href="#">
+        <img
+          src="img/svg/logo-sedona.svg"
+          width="138"
+          height="70"
+          alt="Седона"
+        />
+      </a>
+      <nav class="nav-main">
         <ul>
           <li><a href="">Информация</a></li>
           <li><a href="">Фото и видео</a></li>
@@ -33,13 +38,15 @@
           height="509"
           alt="Главная"
         />
-        <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="main-title">
+          Седона — небольшой городок в Аризоне, заслуживающий большего!
+        </p>
       </div>
-      <section>
-        <h3>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h3>
+      <div class="feature-list">
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <!-- Основной контент страницы -->
-        <div>
-          <div>
+        <div class="ribbon">
+          <div class="feature-item">
             <h3>Настоящий городок</h3>
             <p>— №1 —</p>
             <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
@@ -49,7 +56,7 @@
           </div>
           <div>
             <!-- Можно сделать здесь список, но я бы хотел попробовать стилизовать флексбоксами -->
-            <div>
+            <div class="feature-item">
               <span>
                 <img
                   src="img/svg/icon-1.svg"
@@ -61,7 +68,7 @@
               <h3>Жилье</h3>
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </div>
-            <div>
+            <div class="feature-item">
               <span>
                 <img
                   src="img/svg/icon-3.svg"
@@ -73,7 +80,7 @@
               <h3>Еда</h3>
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </div>
-            <div>
+            <div class="feature-item">
               <span>
                 <img
                   src="img/svg/icon-2.svg"
@@ -86,7 +93,7 @@
               <p>Не только китайского, но и местного производства!</p>
             </div>
           </div>
-          <div>
+          <div class="feature-item">
             <div>
               <img src="img/canyon.jpg" width="800" height="256" alt="Каньон" />
             </div>
@@ -96,24 +103,24 @@
           </div>
           <div>
             <!-- То же самое, флексбоксы тут -->
-            <div>
+            <div class="feature-item">
               <h3>Небольшая площадь</h3>
               <p>— №3 —</p>
               <p>Все достопримечательности находятся очень близко</p>
             </div>
-            <div>
+            <div class="feature-item">
               <h3>Красивая дорога</h3>
               <p>— №4 —</p>
               <p>Ехать в Седону из лас-вегаса совсем не скучно!</p>
             </div>
-            <div>
+            <div class="feature-item">
               <h3>Мало туристов</h3>
               <p>— №5 —</p>
               <p>Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <div>
         <p>Заинтересовались?</p>
         <p>
@@ -122,8 +129,14 @@
         </p>
         <div>
           <div>
-            <button type="button">Поиск гостиницы в Седоне</button>
-            <form action="https://echo.htmlacademy.ru" method="post">
+            <button class="button-hotels button-brown" type="button">
+              Поиск гостиницы в Седоне
+            </button>
+            <form
+              class="hidden-popup"
+              action="https://echo.htmlacademy.ru"
+              method="post"
+            >
               <div>
                 <label for="check-in">Дата заезда:</label>
                 <input
@@ -182,16 +195,16 @@
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div>
         <img src="img/map.png" width="1199" height="594" alt="Карта" />
       </div>
-      <div>
+      <div class="contacts">
         <p>#visitsedona</p>
         <p>тел: <a href="tel:+74956660266">+7(495)666-02-66</a></p>
       </div>
-      <div class="logos">
-        <span>
+      <div>
+        <span class="button-social">
           <a href="https://twitter.com">
             <img
               src="img/svg/twitter.svg"
@@ -202,7 +215,7 @@
             />
           </a>
         </span>
-        <span>
+        <span class="button-social">
           <a href="https://facebook.com">
             <img
               src="img/svg/fb-icon.svg"
@@ -213,7 +226,7 @@
             />
           </a>
         </span>
-        <span>
+        <span class="button-social">
           <a href="https://youtube.com">
             <img
               src="img/svg/youtube.svg"
@@ -224,6 +237,20 @@
             />
           </a>
         </span>
+      </div>
+      <div>
+        <p>
+          <span>Website by:</span>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img
+              class="academy-logo"
+              src="img/svg/logo-htmlacademy.svg"
+              width="114"
+              height="40"
+              alt="HTML Academy logo"
+            />
+          </a>
+        </p>
       </div>
     </footer>
   </body>

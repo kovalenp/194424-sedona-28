@@ -2,26 +2,30 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>City of Sedonа</title>
   </head>
-
   <body>
-    <header>
-      <nav>
-        <a href="./index.html">
-          <img
-            src="img/svg/logo-sedona.svg"
-            width="138"
-            height="70"
-            alt="Седона"
-          />
-        </a>
+    <header class="header">
+      <a href="./index.html">
+        <img
+          src="img/svg/logo-sedona.svg"
+          width="138"
+          height="70"
+          alt="Седона"
+        />
+      </a>
+      <nav class="nav-main">
         <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li><a href="">Информация</a></li>
+          <li><a href="">Фото и видео</a></li>
+          <li><a href="">Карта штата</a></li>
+          <li><a href="./hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -147,7 +151,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="hotel-items">
         <ul>
           <li>
             <div>
@@ -160,13 +164,11 @@
                 />
               </div>
               <div>
-                <h3>
-                  <a href="#">Amara Resort &amp; Spa copy</a>
-                </h3>
+                <h3>>Amara Resort &amp; Spa copy</h3>
                 <p>Гостиница</p>
                 <p>от 4000 р.</p>
-                <a href="#">Подробнее</a>
-                <a href="#">Забронировать</a>
+                <a class="button-blue button-more" href="#">Подробнее</a>
+                <a class="button-brown button-book" href="#">Забронировать</a>
               </div>
               <div>
                 <div>
@@ -189,13 +191,13 @@
                     alt="Звездочка"
                   />
                   <img
-                    src="imS/svg/star.svg"
+                    src="img/svg/star.svg"
                     width="17"
                     height="17"
                     alt="Звездочка;"
                   />
                 </div>
-                <p>8.5</p>
+                <p class="raiting">Рейтинг: 8.5</p>
               </div>
             </div>
           </li>
@@ -210,13 +212,11 @@
                 />
               </div>
               <div>
-                <h3>
-                  <a href="#">Desert Quail Inn</a>
-                </h3>
+                <h3>Desert Quail Inn</h3>
                 <p>Мотель</p>
                 <p>от 3000 р.</p>
-                <a href="#">Подробнее</a>
-                <a href="#">Забронировать</a>
+                <a class="button-blue button-more" href="#">Подробнее</a>
+                <a class="button-brown button-book" href="#">Забронировать</a>
               </div>
               <div>
                 <div>
@@ -239,7 +239,7 @@
                     alt="Звездочка"
                   />
                 </div>
-                <p>8.9</p>
+                <p class="raiting">Рейтинг: 8.9</p>
               </div>
             </div>
           </li>
@@ -254,13 +254,11 @@
                 />
               </div>
               <div>
-                <h3>
-                  <a href="#">Villas at Poco Diablo</a>
-                </h3>
+                <h3>Villas at Poco Diablo</h3>
                 <p>Апартаменты</p>
                 <p>от 2000 р.</p>
-                <a href="#">Подробнее</a>
-                <a href="#">Забронировать</a>
+                <a class="button-blue button-more" href="#">Подробнее</a>
+                <a class="button-brown button-book" href="#">Забронировать</a>
               </div>
               <div>
                 <div>
@@ -277,20 +275,23 @@
                     alt="Звездочка"
                   />
                 </div>
-                <p>2.5</p>
+                <p class="raiting">Рейтинг: 9.2</p>
               </div>
             </div>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div>
+        <img src="img/map.png" width="1199" height="594" alt="Карта" />
+      </div>
+      <div class="contacts">
         <p>#visitsedona</p>
         <p>тел: <a href="tel:+74956660266">+7(495)666-02-66</a></p>
       </div>
-      <div class="logos">
-        <span>
+      <div>
+        <span class="button-social">
           <a href="https://twitter.com">
             <img
               src="img/svg/twitter.svg"
@@ -301,7 +302,7 @@
             />
           </a>
         </span>
-        <span>
+        <span class="button-social">
           <a href="https://facebook.com">
             <img
               src="img/svg/fb-icon.svg"
@@ -312,7 +313,7 @@
             />
           </a>
         </span>
-        <span>
+        <span class="button-social">
           <a href="https://youtube.com">
             <img
               src="img/svg/youtube.svg"
@@ -329,6 +330,7 @@
           <span>Website by:</span>
           <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img
+              class="academy-logo"
               src="img/svg/logo-htmlacademy.svg"
               width="114"
               height="40"
