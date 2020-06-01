@@ -17,6 +17,7 @@
   --basic-gray: #eeeeee;
   --basic-gray-text: #333333;
   --basic-gray-light: #f2f2f2;
+  --gray-active: #bdbbbc;
   --basic-blue-light: #81b3d2;
   --basic-blue: #669ec0;
   --basic-blue-dark: #5496bd;
@@ -25,6 +26,7 @@
   --basic-brown-dark: #503e33;
   --basic-black: #000000;
   --basic-white: #ffffff;
+  --basic-white-opacity: rgba(255, 255, 255, 0.3);
 }
 
 body {
@@ -47,27 +49,24 @@ a {
   text-decoration: none;
 }
 
-.main-nav ul {
-  list-style-type: none;
-}
+/* Navigation */
 
 .header {
   background-color: transparent;
 }
 
-.footer {
-  background-color: var(--basic-white);
+.main-nav ul {
+  list-style-type: none;
 }
-
-/* Navigation */
 
 .nav-main {
   line-height: 26px;
   background-color: var(--basic-white);
   text-align: center;
+  font-weight: bold;
 }
 
-.nav-main a {
+.nav-main a:not(.nav-selected) {
   color: var(--basic-black);
 }
 
@@ -93,6 +92,10 @@ a {
   font-size: 21px;
   line-height: 26px;
   text-align: center;
+}
+
+.nav-selected {
+  color: var(--basic-brown-light);
 }
 
 /* Features */
@@ -149,14 +152,6 @@ a {
 
 /* Button */
 
-button {
-  font: inherit;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
-  border: none;
-}
-
 .button-blue {
   color: var(--basic-white);
   background-color: var(--basic-blue-light);
@@ -169,10 +164,8 @@ button {
 }
 
 .button-blue:active {
-  color: var(--basic-white);
+  color: var(--basic-white-opacity);
   background-color: var(--basic-blue-dark);
-  mix-blend-mode: normal;
-  opacity: 0.3;
 }
 
 .button-brown {
@@ -186,10 +179,8 @@ button {
 }
 
 .button-brown:active {
-  color: var(--basic-white);
+  color: var(--basic-white-opacity);
   background-color: var(--basic-brown-dark);
-  mix-blend-mode: normal;
-  opacity: 0.3;
 }
 
 .button-hotels {
@@ -197,6 +188,7 @@ button {
   font-size: 21px;
   line-height: 26px;
   padding: 30px 125px;
+  display: inline-block;
 }
 
 .button-more {
@@ -207,11 +199,31 @@ button {
   padding: 3px 17px 3px 16px;
 }
 
-.button-social {
+/* Footer */
+
+.footer {
+  background-color: var(--basic-white);
+}
+
+.social-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.social-list li {
+  margin-right: 6px;
   height: 48px;
   width: 48px;
   background-color: var(--basic-blue-light);
-  display: inline-block;
+}
+
+.social-list li:hover {
+  background-color: var(--basic-blue);
+}
+
+.social-list li:active {
+  color: var(--basic-white-opacity);
+  background-color: var(--basic-blue-dark);
 }
 
 .twitter {
@@ -228,7 +240,6 @@ button {
 .youtube {
   margin: 16px 13px;
 }
-/* Footer */
 
 .contacts {
   font-weight: bold;
@@ -245,10 +256,16 @@ button {
   width: 115px;
 }
 
-/* svg:hover path {
-  fill: red;
-} */
+.academy-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
 
 .academy-logo:hover path {
   fill: var(--basic-blue-light);
+}
+
+.academy-logo:active path {
+  fill: var(--gray-active);
 }
