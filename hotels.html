@@ -31,18 +31,14 @@
     </header>
     <main>
       <section>
-        <div>
-          <img
-            src="img/background_filter.jpg"
-            width="1200"
-            height="217"
-            alt="Фильтр"
-          />
-        </div>
-        <div>
+        <div class="filter-background">
           <h2 class="visually-hidden">Поиск жилья</h2>
-          <form action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
+          <form
+            class="filters"
+            action="https://echo.htmlacademy.ru"
+            method="get"
+          >
+            <fieldset class="filter-group">
               <legend>Инфраструктура:</legend>
               <ul>
                 <li>
@@ -64,7 +60,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-group">
               <legend>Тип жилья:</legend>
               <ul>
                 <li>
@@ -96,40 +92,38 @@
                 </li>
               </ul>
             </fieldset>
-            <div>
-              <p>Стоимость в сутки (р):</p>
-              <div>
-                <label
+            <div class="filter-range">
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <label class="min-price"
                   >от <input type="number" name="min-price" value="0"
                 /></label>
-                <label
+                <label class="max-price"
                   >до <input type="number" name="max-price" value="3000"
                 /></label>
               </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
             </div>
-            <button type="submit">Показать</button>
           </form>
         </div>
-        <div>
-          <h3>Стоимость в сутки (Р):</h3>
-          <div>
-            <p>От 0</p>
-            <p>До 3000</p>
-          </div>
-          <div><span>&#9673;</span><span>&#9673;</span></div>
-          <button type="button">Показать</button>
-        </div>
-        <div>
-          <p>Найдено: 3</p>
-          <div>
+        <div class="filter-sorting-container">
+          <p class="filter-results-count">Найдено: 3</p>
+          <div class="filter-sorting">
             <p>Сортировка:</p>
-            <ul>
-              <li><button type="button">По цене</button></li>
-              <li><button type="button">По типу</button></li>
-              <li><button type="button">По рейтингу</button></li>
+            <ul class="filter-values">
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По рейтингу</a></li>
             </ul>
           </div>
-          <div>
+          <div class="filter-results-direction">
             <a href="#">
               <img
                 src="img/svg/icon-up-dir.svg"
