@@ -212,9 +212,8 @@ a {
 
 .filter-range {
   width: 330px;
-  margin: 50px auto; /* для демо */
-
-  color: #ffffff;
+  margin: 50px auto;
+  color: var(--basic-white);
   text-transform: uppercase;
 }
 
@@ -234,7 +233,7 @@ a {
 
   font-size: 0;
 
-  border: 2px solid #ffffff;
+  border: 2px solid var(--basic-white);
   border-radius: 2px;
 }
 
@@ -247,7 +246,7 @@ a {
   width: 2px;
   height: 22px;
 
-  background: #ffffff;
+  background: var(--basic-white);
   transform: translate(-50%, -50%);
 }
 
@@ -294,7 +293,7 @@ a {
   width: 80%;
   height: 2px;
 
-  background: #ffffff;
+  background: var(--basic-white);
 }
 
 .range-toggle {
@@ -304,15 +303,15 @@ a {
   width: 4px;
   height: 4px;
 
-  background: #ababab;
-  border: 8px solid #ffffff;
+  background: var(--gray-active);
+  border: 8px solid var(--basic-white);
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  background: var(--basic-blue-dark);
 }
 
 .range-toggle-min {
@@ -330,19 +329,19 @@ a {
 
   font-size: 14px;
   line-height: 20px;
-  color: #ffffff;
+  color: var(--basic-white);
   text-transform: uppercase;
 
   background: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--basic-white);
   border-radius: 2px;
   cursor: pointer;
 }
 
 .btn-transparent:hover {
-  color: #000000;
+  color: var(--basic-black);
 
-  background: #ffffff;
+  background: var(--basic-white);
 }
 
 /* Button */
