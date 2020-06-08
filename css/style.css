@@ -83,6 +83,10 @@ a {
 
 .nav-main ul {
   min-height: 56px;
+  display: flex;
+}
+
+.clear {
   clear: both;
 }
 
