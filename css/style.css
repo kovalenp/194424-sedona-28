@@ -27,6 +27,7 @@
   --basic-black: #000000;
   --basic-white: #ffffff;
   --basic-white-opacity: rgba(255, 255, 255, 0.3);
+  --basic-white-opacity-max: rgba(255, 255, 255, 0.9);
   --basic-black-opacity: rgba(0, 0, 0, 0.3);
 }
 
@@ -38,8 +39,14 @@ body {
   line-height: 21px;
   text-transform: uppercase;
   padding: 0 20px;
-  min-width: 1280px;
+
   background-color: var(--basic-gray);
+}
+
+.container {
+  min-width: 1200px;
+  margin: auto;
+  width: 60%;
 }
 
 img {
@@ -53,7 +60,13 @@ a {
 /* Navigation */
 
 .header {
+  position: relative;
   background-color: transparent;
+}
+
+.sedona-logo {
+  position: absolute;
+  margin-left: 531px;
 }
 
 .nav-main {
@@ -61,10 +74,35 @@ a {
   background-color: var(--basic-white);
   text-align: center;
   font-weight: bold;
+  border: 1px solid purple;
 }
 
 .nav-main a:not(.nav-selected) {
   color: var(--basic-black);
+}
+
+.nav-main ul {
+  min-height: 56px;
+  clear: both;
+}
+
+.menu-left {
+  float: left;
+  width: 50%;
+  display: flex;
+  background-color: yellow;
+}
+
+.menu-right {
+  float: right;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: greenyellow;
+}
+
+.nav-main li {
+  margin: 15px 72px;
 }
 
 .nav-main ul,
@@ -87,11 +125,23 @@ a {
   opacity: 0.3;
 }
 
+.main-title-container {
+  width: 100%;
+  background-color: var(--basic-white);
+  text-align: center;
+}
+
 .main-title {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  text-align: center;
+  max-width: 470px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-title-reasons {
+  margin: 0px;
 }
 
 .nav-selected {
@@ -179,6 +229,28 @@ a {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+}
+
+.hotel-card {
+  display: flex;
+  background-color: yellowgreen;
+  border: 1px solid purple;
+}
+
+.hotel-image {
+  margin: 0 30px;
+  margin-top: 30px;
+}
+
+.hotel-description {
+  margin-left: 20px;
+  background-color: goldenrod;
+}
+
+.hotel-rating {
+  margin-left: 520px;
+  margin-top: 30px;
+  background-color: yellow;
 }
 
 .raiting {
@@ -396,12 +468,29 @@ a {
 /* Footer */
 
 .footer {
-  background-color: var(--basic-white);
+  position: relative;
+  border: 1px solid purple;
+}
+
+.map {
+  z-index: -1;
+}
+
+.footer-links {
+  width: 100%;
+  background-color: var(--basic-white-opacity-max);
+  position: absolute;
+  display: flex;
+  left: 0;
+  bottom: 0;
 }
 
 .social-list {
   display: flex;
   list-style-type: none;
+  margin-left: 156px;
+  margin-top: 36px;
+  background-color: greenyellow;
 }
 
 .social-list li {
@@ -439,21 +528,34 @@ a {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  margin-left: 117px;
+  margin-top: 23px;
+  background-color: yellow;
 }
 
 .contacts a {
   color: var(--basic-black);
 }
 
+.academy {
+  margin-left: 228px;
+  background-color: green;
+}
+
 .academy-logo {
   height: 41px;
   width: 115px;
+  display: inline-block;
+  margin-top: 38px;
 }
 
 .academy-text {
+  display: inline-block;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
+  margin-top: 49px;
+  margin-right: 8x;
 }
 
 .academy-logo:hover path {
