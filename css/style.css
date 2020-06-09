@@ -66,58 +66,54 @@ a {
 /* Container */
 
 .container {
-  width: 1280px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
 }
 
 /* Navigation */
 
-.header {
+.main-header {
+  position: relative;
   background-color: transparent;
+  background-color: var(--basic-white);
 }
 
-.sedona-logo {
+.main-header-logo {
+  position: absolute;
+  width: 138px;
+  height: 70px;
   margin-left: 531px;
 }
 
-.nav-main {
+.main-nav {
   line-height: 26px;
   background-color: var(--basic-white);
+  width: 100%;
+  height: 56px;
   text-align: center;
   font-weight: bold;
-  border: 1px solid purple;
+  display: flex;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
 }
 
-.nav-main a:not(.nav-selected) {
+.main-nav a:not(.nav-selected) {
   color: var(--basic-black);
 }
 
-.nav-main ul {
-  min-height: 56px;
+.main-nav ul {
   display: flex;
 }
 
-.menu-left {
-  float: left;
-  max-width: 531px;
-  display: flex;
-  background-color: yellow;
+.site-navigation li {
+  margin: 15px 70px;
 }
 
-.menu-right {
-  float: right;
-  max-width: 531px;
-  display: flex;
-  justify-content: flex-end;
-  background-color: greenyellow;
+.site-navigation li:nth-child(3) {
+  margin-left: 320px;
 }
 
-.nav-main li {
-  margin: 15px 72px;
-}
-
-.nav-main ul,
+.site-navigation ul,
 .filter-group ul,
 .hotel-items ul,
 .filter-sorting ul {
@@ -126,12 +122,12 @@ a {
   padding: 0;
 }
 
-.nav-main a:hover,
-.nav-main a:focus {
+.site-navigation a:hover,
+.site-navigation a:focus {
   color: var(--basic-blue);
 }
 
-.nav-main a:active {
+.site-navigation a:active {
   color: var(--basic-black);
   mix-blend-mode: normal;
   opacity: 0.3;
