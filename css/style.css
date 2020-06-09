@@ -44,13 +44,13 @@ body {
 }
 
 .container {
-  min-width: 1200px;
-  margin: auto;
-  width: 60%;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -328,11 +328,9 @@ a {
 
 .price-controls label {
   display: inline-block;
-
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
-
   cursor: pointer;
 }
 
@@ -416,7 +414,6 @@ a {
 
 .btn-transparent:hover {
   color: var(--basic-black);
-
   background: var(--basic-white);
 }
 
@@ -459,6 +456,7 @@ a {
   line-height: 26px;
   padding: 30px 125px;
   display: inline-block;
+  vertical-align: top;
 }
 
 .button-more {
@@ -550,16 +548,18 @@ a {
   height: 41px;
   width: 115px;
   display: inline-block;
+  vertical-align: bottom;
   margin-top: 38px;
 }
 
 .academy-text {
   display: inline-block;
+  vertical-align: bottom;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
   margin-top: 49px;
-  margin-right: 8x;
+  margin-right: 8px;
 }
 
 .academy-logo:hover path {
