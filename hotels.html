@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/normalize.css" />
@@ -10,41 +10,36 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>City of Sedonа</title>
   </head>
-  <body>
+  <body class="page-body container">
     <div class="container">
-      <header class="header">
-        <a href="./index.html" class="sedona-logo">
-          <img
-            src="img/svg/logo-sedona.svg"
-            width="138"
-            height="70"
-            alt="Седона"
-          />
-        </a>
-        <nav class="nav-main">
-          <div class="menu-left">
+      <header class="main-header">
+        <nav class="main-nav">
+          <a href="./index.html" class="main-header-logo">
+            <img
+              src="img/svg/logo-sedona.svg"
+              width="138"
+              height="70"
+              alt="Седона"
+            />
+          </a>
+          <div class="site-navigation">
             <ul>
               <li><a href="">Информация</a></li>
               <li><a href="">Фото и видео</a></li>
-            </ul>
-          </div>
-          <div class="menu-right">
-            <ul>
               <li><a href="">Карта штата</a></li>
               <li>
                 <a class="nav-selected" href="./hotels.html">Гостиницы</a>
               </li>
             </ul>
           </div>
-          <div class="clear"></div>
         </nav>
       </header>
       <main>
-        <section>
+        <section class="filter-containers">
           <div class="filter-background">
             <h2 class="visually-hidden">Поиск жилья</h2>
             <form
-              class="filters"
+              class="filter-selectors"
               action="https://echo.htmlacademy.ru"
               method="get"
             >
@@ -291,16 +286,7 @@
           </ul>
         </section>
       </main>
-      <footer class="footer">
-        <div>
-          <img
-            class="map"
-            src="img/map.png"
-            width="1200"
-            height="594"
-            alt="Карта"
-          />
-        </div>
+      <footer class="main-footer">
         <div class="footer-links">
           <div class="contacts">
             <p>#visitsedona</p>

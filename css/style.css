@@ -289,29 +289,36 @@ a {
 /* Hotels */
 
 .filter-background {
+  outline: 3px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -3px;
   background-image: url(../img/background_filter.jpg);
   width: 1200px;
   height: 217px;
 }
 
-.filters {
+.filter-selectors {
   display: flex;
-  flex-direction: row;
 }
 
 .filter-group {
   border: none;
   color: var(--basic-white);
+  outline: 3px solid rgba(255, 102, 102, 0.3);
+  outline-offset: -3px;
 }
 
 .filter-sorting-container {
   background-color: var(--basic-white);
   display: flex;
+  outline: 3px solid rgba(255, 204, 0, 0.3);
+  outline-offset: -3px;
 }
 
 .filter-sorting {
   display: flex;
   margin-left: 20px;
+  outline: 3px solid rgba(204, 153, 0, 0.3);
+  outline-offset: -3px;
 }
 
 .filter-values {
@@ -383,14 +390,14 @@ a {
 
 .filter-range {
   width: 330px;
-  margin: 50px auto;
   color: var(--basic-white);
   text-transform: uppercase;
+  outline: 3px solid rgba(255, 102, 102, 0.3);
+  outline-offset: -3px;
 }
 
 .filter-range-title {
   margin-bottom: 9px;
-
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -398,12 +405,9 @@ a {
 
 .price-controls {
   position: relative;
-
   height: 36px;
   margin-bottom: 20px;
-
   font-size: 0;
-
   border: 2px solid var(--basic-white);
   border-radius: 2px;
 }
@@ -413,10 +417,8 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 2px;
   height: 22px;
-
   background: var(--basic-white);
   transform: translate(-50%, -50%);
 }
@@ -438,40 +440,33 @@ a {
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
 }
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: var(--basic-white);
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
-
   background: var(--gray-active);
   border: 8px solid var(--basic-white);
   border-radius: 50%;
@@ -495,12 +490,10 @@ a {
   display: block;
   margin: 0 auto;
   padding: 6px 35px;
-
   font-size: 14px;
   line-height: 20px;
   color: var(--basic-white);
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
@@ -565,6 +558,7 @@ a {
 /* Footer */
 
 .main-footer {
+  min-height: 120px;
   outline: 3px solid rgba(204, 0, 102, 0.3);
   outline-offset: -3px;
   position: relative;
