@@ -564,28 +564,39 @@ a {
 
 /* Footer */
 
-.footer {
-  border: 1px solid purple;
+.main-footer {
+  outline: 3px solid rgba(204, 0, 102, 0.3);
+  outline-offset: -3px;
+  position: relative;
 }
 
 .map {
   z-index: -1;
+  width: 1200px;
+  height: 594px;
+  outline: 3px solid rgba(0, 153, 51, 0.3);
+  outline-offset: -3px;
 }
 
 .footer-links {
   width: 100%;
   background-color: var(--basic-white-opacity-max);
   display: flex;
+  justify-content: space-around;
+  position: absolute;
   left: 0;
   bottom: 0;
+  outline: 3px solid rgba(204, 0, 102, 0.3);
+  outline-offset: -3px;
 }
 
 .social-list {
   display: flex;
   list-style-type: none;
-  margin-left: 156px;
   margin-top: 36px;
-  background-color: greenyellow;
+  padding: 0px;
+  outline: 3px solid rgba(0, 153, 255, 0.3);
+  outline-offset: -3px;
 }
 
 .social-list li {
@@ -593,6 +604,10 @@ a {
   height: 48px;
   width: 48px;
   background-color: var(--basic-blue-light);
+}
+
+.social-list li:last-child {
+  margin-right: 0px;
 }
 
 .social-list li:hover {
@@ -623,9 +638,9 @@ a {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  margin-left: 117px;
   margin-top: 23px;
-  background-color: yellow;
+  outline: 3px solid rgba(0, 153, 255, 0.3);
+  outline-offset: -3px;
 }
 
 .contacts a {
@@ -633,8 +648,8 @@ a {
 }
 
 .academy {
-  margin-left: 228px;
-  background-color: green;
+  outline: 3px solid rgba(0, 153, 255, 0.3);
+  outline-offset: -3px;
 }
 
 .academy-logo {
