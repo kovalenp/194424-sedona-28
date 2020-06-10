@@ -310,8 +310,20 @@ a {
 .filter-sorting-container {
   background-color: var(--basic-white);
   display: flex;
+  align-items: center;
   outline: 3px solid rgba(255, 204, 0, 0.3);
   outline-offset: -3px;
+}
+
+.filter-results-count {
+  width: 136px;
+}
+
+.filter-results-direction {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 110px;
 }
 
 .filter-sorting {
@@ -323,6 +335,7 @@ a {
 
 .filter-values {
   display: flex;
+  align-items: center;
 }
 
 .filter-value a {
@@ -574,6 +587,7 @@ a {
 
 .main-footer-links {
   width: 100%;
+  height: 120px;
   background-color: var(--basic-white-opacity-max);
   display: flex;
   justify-content: space-around;
@@ -586,6 +600,7 @@ a {
 
 .footer-links {
   width: 100%;
+  height: 120px;
   background-color: var(--basic-white-opacity-max);
   display: flex;
   justify-content: space-around;
@@ -596,7 +611,7 @@ a {
 .social-list {
   display: flex;
   list-style-type: none;
-  margin-top: 36px;
+
   padding: 0px;
   outline: 3px solid rgba(0, 153, 255, 0.3);
   outline-offset: -3px;
@@ -647,7 +662,6 @@ a {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  margin-top: 23px;
   outline: 3px solid rgba(0, 153, 255, 0.3);
   outline-offset: -3px;
 }
@@ -675,7 +689,7 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  margin-top: 49px;
+  margin-bottom: 10px;
   margin-right: 8px;
 }
 
