@@ -30,6 +30,7 @@
   --basic-white-opacity-max: rgba(255, 255, 255, 0.9);
   --basic-black-opacity: rgba(0, 0, 0, 0.3);
   --shadow: rgba(0, 1, 1, 0.2);
+  --border: #e5e5e5;
 }
 
 body {
@@ -319,8 +320,6 @@ a {
 /* Hotels */
 
 .filter-background {
-  outline: 3px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -3px;
   background-image: url(../img/background_filter.jpg);
   width: 1200px;
   height: 217px;
@@ -328,39 +327,45 @@ a {
 
 .filter-selectors {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-group-wrapper {
+  display: flex;
 }
 
 .filter-group {
   border: none;
   color: var(--basic-white);
-  outline: 3px solid rgba(255, 102, 102, 0.3);
-  outline-offset: -3px;
 }
 
 .filter-sorting-container {
   background-color: var(--basic-white);
   display: flex;
   align-items: center;
-  outline: 3px solid rgba(255, 204, 0, 0.3);
-  outline-offset: -3px;
+  min-height: 86px;
+  border-bottom: 1px solid var(--border);
 }
 
 .filter-results-count {
-  width: 136px;
+  margin-left: 73px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .filter-results-direction {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 110px;
+  margin-right: 501px;
 }
 
 .filter-sorting {
   display: flex;
-  margin-left: 20px;
-  outline: 3px solid rgba(204, 153, 0, 0.3);
-  outline-offset: -3px;
+  margin-left: 46px;
 }
 
 .filter-values {
@@ -371,12 +376,12 @@ a {
 .filter-value a {
   color: var(--basic-black-opacity);
   border-bottom: 1px dashed var(--basic-blue-light);
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .filter-value-selected a {
   color: var(--basic-blue-light);
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .filter-value a:hover,
