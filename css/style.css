@@ -358,9 +358,29 @@ a {
 
 .filter-results-direction {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-right: 501px;
+  align-items: baseline;
+  justify-content: space-around;
+  width: 34px;
+  margin-left: 501px;
+}
+
+.sorting-arrow {
+  height: 11px;
+  width: 10px;
+}
+
+.sorting-arrow path {
+  fill: var(--basic-black-opacity);
+}
+
+.sorting-arrow:hover path {
+  fill: var(--basic-black);
+}
+
+.sorting-arrow-selected path,
+.sorting-arrow:active path
+{
+  fill: var(--basic-blue);
 }
 
 .filter-sorting {
