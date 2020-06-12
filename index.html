@@ -33,21 +33,22 @@
     </header>
     <main class="main-content">
       <h1 class="visually-hidden">Сайт города Седона</h1>
-      <div class="main-title-container">
-        <div class="main-background-image">
-          <img
-            src="img/background_main.jpg"
-            width="1200"
-            height="509"
-            alt="Главная"
-          />
-          <div class="main-intro-image">
-            <img src="img/svg/intro-welcome.svg" alt="Текст" />
-          </div>
-          <div class="main-intro-mask">
-            <img src="img/svg/intro-mask.svg" alt="Маска" />
-          </div>
+
+      <div class="main-background-image">
+        <img
+          src="img/background_main.jpg"
+          width="1200"
+          height="509"
+          alt="Главная"
+        />
+        <div class="main-intro-image">
+          <img src="img/svg/intro-welcome.svg" alt="Текст" />
         </div>
+        <div class="main-intro-mask">
+          <img src="img/svg/intro-mask.svg" alt="Маска" />
+        </div>
+      </div>
+      <div class="main-title-container">
         <p class="main-title">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </p>
@@ -58,9 +59,11 @@
       <div class="feature-list">
         <div class="feature-row">
           <div class="feature-item feature-highlight">
-            <h3>Настоящий городок</h3>
-            <p>— №1 —</p>
-            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            <h3 class="feature-highlight-title">Настоящий городок</h3>
+            <p class="feature-highlight-number">— №1 —</p>
+            <p class="feature-highlight-text">
+              Седона - не аттракцион для туристов, там течёт своя жизнь
+            </p>
           </div>
           <div class="feature-image">
             <img src="img/flag.jpg" width="800" height="256" alt="Флаг" />
@@ -68,35 +71,41 @@
         </div>
         <div class="feature-row">
           <div class="feature-item feature-white-list">
-            <span>
+            <div class="feature-icon-house">
               <img src="img/svg/icon-1.svg" width="75" height="72" alt="Дом" />
-            </span>
-            <h3>Жилье</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </div>
+            <h3 class="feature-white-list-title">Жилье</h3>
+            <p class="feature-white-list-text">
+              Рекомендуем пожить в настоящем мотеле, всё как в кино!
+            </p>
           </div>
           <div class="feature-item feature-white-list">
-            <span>
+            <div class="feature-icon-burger">
               <img
                 src="img/svg/icon-3.svg"
                 width="75"
                 height="70"
                 alt="Бургер"
               />
-            </span>
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+            <h3 class="feature-white-list-title">Еда</h3>
+            <p class="feature-white-list-text">
+              Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+            </p>
           </div>
           <div class="feature-item feature-white-list">
-            <span>
+            <div class="feature-icon-gift">
               <img
                 src="img/svg/icon-2.svg"
                 width="64"
                 height="77"
                 alt="Подарок"
               />
-            </span>
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
+            </div>
+            <h3 class="feature-white-list-title">Сувениры</h3>
+            <p class="feature-white-list-text">
+              Не только китайского, но и местного производства!
+            </p>
           </div>
         </div>
         <div class="feature-row">
@@ -104,27 +113,34 @@
             <img src="img/canyon.jpg" width="800" height="256" alt="Каньон" />
           </div>
           <div class="feature-item feature-highlight">
-            <h3>Там есть Мост дьявола</h3>
-            <p>— №2 —</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <h3 class="feature-highlight-title">Там есть Мост дьявола</h3>
+            <p class="feature-highlight-number">— №2 —</p>
+            <p class="feature-highlight-text">
+              Да, по нему можно пройти! Если конечно вы осмелитесь
+            </p>
           </div>
         </div>
-        <div class="feature-row">
-          <!-- То же самое, флексбоксы тут -->
+        <div class="feature-row feature-highlight-alt">
           <div class="feature-item">
-            <h3>Небольшая площадь</h3>
-            <p>— №3 —</p>
-            <p>Все достопримечательности находятся очень близко</p>
+            <h3 class="feature-highlight-title">Небольшая площадь</h3>
+            <p class="feature-highlight-number">— №3 —</p>
+            <p class="feature-highlight-text">
+              Все достопримечательности находятся очень близко
+            </p>
           </div>
           <div class="feature-item">
-            <h3>Красивая дорога</h3>
-            <p>— №4 —</p>
-            <p>Ехать в Седону из лас-вегаса совсем не скучно!</p>
+            <h3 class="feature-highlight-title">Красивая дорога</h3>
+            <p class="feature-highlight-number">— №4 —</p>
+            <p class="feature-highlight-text">
+              Ехать в Седону из лас-вегаса совсем не скучно!
+            </p>
           </div>
           <div class="feature-item">
-            <h3>Мало туристов</h3>
-            <p>— №5 —</p>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
+            <h3 class="feature-highlight-title">Мало туристов</h3>
+            <p class="feature-highlight-number">— №5 —</p>
+            <p class="feature-highlight-text">
+              Большинство едет в Гранд Каньон и толпится там
+            </p>
           </div>
         </div>
       </div>
@@ -135,11 +151,11 @@
             Укажите предполагаемые даты поездки,<br />
             и мы покажем Вам лучшие предложения гостиниц в Седоне
           </p>
-        </div>
-        <div>
-          <a class="button-hotels button-brown" href="#"
-            >Поиск гостиницы в Седоне</a
-          >
+          <div>
+            <a class="button-hotels button-brown" href="#"
+              >Поиск гостиницы в Седоне</a
+            >
+          </div>
         </div>
       </div>
     </main>

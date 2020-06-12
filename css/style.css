@@ -29,6 +29,7 @@
   --basic-white-opacity: rgba(255, 255, 255, 0.3);
   --basic-white-opacity-max: rgba(255, 255, 255, 0.9);
   --basic-black-opacity: rgba(0, 0, 0, 0.3);
+  --shadow: rgba(0, 1, 1, 0.2);
 }
 
 body {
@@ -39,6 +40,7 @@ body {
   line-height: 21px;
   text-transform: uppercase;
   background-color: var(--basic-gray);
+  box-shadow: 0px 5px 15px var(--shadow);
 }
 
 img {
@@ -83,8 +85,6 @@ a {
   width: 138px;
   height: 70px;
   left: 531px;
-  outline: 3px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -3px;
   z-index: 1;
 }
 
@@ -96,8 +96,6 @@ a {
   text-align: center;
   font-weight: bold;
   display: flex;
-  outline: 3px solid rgba(255, 0, 255, 0.3);
-  outline-offset: -3px;
 }
 
 .main-nav a:not(.nav-selected) {
@@ -110,12 +108,10 @@ a {
 
 .site-navigation li {
   margin: 15px 72px;
-  outline: 3px solid rgba(0, 0, 255, 0.3);
-  outline-offset: -3px;
 }
 
 .site-navigation li:nth-child(3) {
-  margin-left: 340px;
+  margin-left: 338px;
 }
 
 .site-navigation ul,
@@ -148,22 +144,20 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  background-color: var(--basic-white);
+  text-align: center;
 }
 
 /* Main page image and title */
 
 .main-title-container {
+  min-height: 216px;
   width: 100%;
-  background-color: var(--basic-white);
-  text-align: center;
-  outline: 3px solid rgba(0, 0, 102, 0.3);
-  outline-offset: -3px;
 }
 
 .main-background-image {
   background-color: var(--basic-brown-light);
-  outline: 3px solid rgba(255, 102, 0, 0.3);
-  outline-offset: -3px;
   width: 1200px;
   height: 509px;
   position: relative;
@@ -177,8 +171,6 @@ a {
   left: 372px;
   outline-offset: -3px;
   z-index: 1;
-  outline: 3px solid rgba(255, 102, 0, 0.3);
-  outline-offset: -3px;
 }
 
 .main-intro-mask {
@@ -187,8 +179,6 @@ a {
   height: 59px;
   bottom: -2px;
   z-index: 1;
-  outline: 3px solid rgba(255, 204, 102, 0.3);
-  outline-offset: -3px;
 }
 
 .main-title {
@@ -198,17 +188,14 @@ a {
   max-width: 470px;
   margin-left: auto;
   margin-right: auto;
-  outline: 3px solid rgba(255, 204, 102, 0.3);
-  outline-offset: -3px;
+  margin-top: 43px;
 }
 
 .main-title-reasons {
-  outline: 3px solid rgba(255, 204, 102, 0.3);
   max-width: 520px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 30px;
-  outline-offset: -3px;
+  margin-top: 52px;
 }
 
 /* Booking */
@@ -217,54 +204,52 @@ a {
   text-align: center;
   width: 1200px;
   background-color: var(--basic-white);
-  outline: 3px solid rgba(51, 51, 0, 0.3);
-  outline-offset: -3px;
+}
+
+.main-booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 291px;
 }
 
 .booking-title {
+  margin: 0;
+  margin-top: 57px;
   font-weight: bold;
   font-size: 30px;
   line-height: 24px;
-  outline: 3px solid rgba(51, 51, 0, 0.3);
-  outline-offset: -3px;
 }
 
 .booking-text {
+  margin: 0;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  outline: 3px solid rgba(51, 51, 0, 0.3);
-  outline-offset: -3px;
 }
 
 /* Features */
 
 .feature-list {
-  outline: 3px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -3px;
   width: 1200px;
 }
 
 .feature-item {
   text-align: center;
-}
-
-.feature-item {
-  text-align: center;
   width: 400px;
-  outline: 3px solid rgba(0, 0, 153, 0.3);
-  outline-offset: -3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .feature-item h3 {
-  margin-top: 0px;
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
-}
-
-.feature-item p {
-  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .feature-row {
@@ -273,17 +258,62 @@ a {
 
 .feature-highlight {
   background-color: var(--basic-blue-light);
+  color: var(--basic-white);
+}
+
+.feature-highlight-title {
+  margin: 0;
+  margin-top: 50px;
+}
+
+.feature-highlight-number {
+  margin: 0;
+}
+
+.feature-highlight-text {
+  margin: 0;
+  max-width: 301px;
+  margin-bottom: 50px;
 }
 
 .feature-image {
   width: 800px;
   height: 256px;
-  outline: 3px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -3px;
 }
 
 .feature-white-list {
   background-color: var(--basic-white);
+  min-height: 330px;
+}
+
+.feature-highlight-alt {
+  background-color: var(--basic-gray);
+  min-height: 256px;
+}
+
+.feature-white-list-text {
+  margin: 0;
+  max-width: 297px;
+  margin-bottom: 60px;
+}
+
+.feature-icon-house {
+  width: 72px;
+  height: 75px;
+  margin-top: 60px;
+}
+
+.feature-icon-burger {
+  width: 75px;
+  height: 70px;
+  margin-top: 61px;
+}
+
+.feature-icon-gift {
+  width: 77px;
+  height: 64px;
+  margin-top: 55px;
+  margin-bottom: 10px;
 }
 
 /* Hotels */
@@ -572,8 +602,6 @@ a {
 
 .main-footer {
   min-height: 120px;
-  outline: 3px solid rgba(204, 0, 102, 0.3);
-  outline-offset: -3px;
   position: relative;
 }
 
@@ -581,8 +609,6 @@ a {
   z-index: -1;
   width: 1200px;
   height: 594px;
-  outline: 3px solid rgba(0, 153, 51, 0.3);
-  outline-offset: -3px;
 }
 
 .main-footer-links {
@@ -594,8 +620,6 @@ a {
   position: absolute;
   left: 0;
   bottom: 0;
-  outline: 3px solid rgba(204, 0, 102, 0.3);
-  outline-offset: -3px;
 }
 
 .footer-links {
@@ -604,21 +628,17 @@ a {
   background-color: var(--basic-white-opacity-max);
   display: flex;
   justify-content: space-around;
-  outline: 3px solid rgba(204, 0, 102, 0.3);
-  outline-offset: -3px;
 }
 
 .social-list {
   display: flex;
   list-style-type: none;
-
   padding: 0px;
-  outline: 3px solid rgba(0, 153, 255, 0.3);
-  outline-offset: -3px;
 }
 
 .social-list li {
   margin-right: 6px;
+  margin-top: 30px;
   height: 48px;
   width: 48px;
   background-color: var(--basic-blue-light);
@@ -662,17 +682,11 @@ a {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  outline: 3px solid rgba(0, 153, 255, 0.3);
-  outline-offset: -3px;
+  margin: 0;
 }
 
 .contacts a {
   color: var(--basic-black);
-}
-
-.academy {
-  outline: 3px solid rgba(0, 153, 255, 0.3);
-  outline-offset: -3px;
 }
 
 .academy-logo {
@@ -689,7 +703,7 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   margin-right: 8px;
 }
 
