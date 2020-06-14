@@ -541,6 +541,10 @@ a {
   z-index: 1;
 }
 
+.filter-checkbox-input:checked + .filter-checkbox {
+  background-image: url(/img/svg/checkbox-on.svg);
+}
+
 .filter-sorting-container {
   background-color: var(--basic-white);
   display: flex;
