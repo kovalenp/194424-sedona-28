@@ -378,7 +378,8 @@ input:focus {
   color: var(--basic-black);
 }
 
-.search-date-input input:focus {
+.search-date-input input:focus,
+.search-date-input input:focus:hover {
   background-color: var(--basic-white);
   border: 2px solid var(--border);
   box-sizing: border-box;
@@ -395,17 +396,14 @@ input:focus {
   height: 22px;
   top: 7px;
   right: 9px;
-}
-
-.calendar path {
   fill: var(--gray-icon);
 }
 
-.calendar path:hover {
+.calendar:hover {
   fill: var(--basic-black);
 }
 
-.calendar path:active {
+.calendar:active {
   fill: var(--basic-blue-light);
 }
 
@@ -650,7 +648,9 @@ input:focus {
 }
 
 .rating {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--basic-gray-light);
   width: 110px;
   height: 27px;
