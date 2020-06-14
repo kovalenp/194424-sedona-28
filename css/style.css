@@ -480,6 +480,7 @@ a {
   background-image: url(../img/background_filter.jpg);
   width: 1200px;
   height: 217px;
+  z-index: -1;
 }
 
 .filter-selectors {
@@ -508,9 +509,36 @@ a {
   margin: 24px 0;
 }
 
+.filter-group label {
+  cursor: pointer;
+}
+
 .filter-group legend {
   font-weight: bold;
   font-size: 16px;
+}
+
+.filter-checkbox-row {
+  padding-left: 1.2em;
+  display: flex;
+  align-items: center;
+}
+
+.filter-checkbox-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.filter-checkbox {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background-image: url(/img/svg/checkbox-off.svg);
+  background-size: 1em 1em;
+  margin-left: -1.2em;
+  z-index: 1;
 }
 
 .filter-sorting-container {
