@@ -55,16 +55,6 @@ a {
   text-decoration: none;
 }
 
-button:focus {
-  outline: 0;
-}
-
-input:focus {
-  outline: 0;
-}
-
-/* Grid */
-
 .page {
   height: 100%;
 }
@@ -501,12 +491,17 @@ input:focus {
 .filter-group-wrapper {
   display: flex;
   margin-top: 26px;
-  margin-left: 72px;
+  margin-left: 71px;
 }
 
 .filter-group {
   border: none;
   color: var(--basic-white);
+  padding: 0;
+}
+
+.filter-group:first-child {
+  margin-right: 118px;
 }
 
 .filter-group li {
@@ -620,14 +615,24 @@ input:focus {
   margin-left: 29px;
 }
 
-.hotel-description-type {
+.hotel-description-column-wrapper {
   display: flex;
-  justify-content: space-evenly;
+}
+
+.hotel-description-column-left {
+  margin-right: 6px;
 }
 
 .hotel-description-name {
   margin: 0;
   margin-top: 23px;
+}
+
+.hotel-description-text {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 7px;
+  margin-bottom: 18.5px;
 }
 
 .hotel-description-name:hover {
@@ -654,7 +659,7 @@ input:focus {
   background-color: var(--basic-gray-light);
   width: 110px;
   height: 27px;
-  margin-top: 47px;
+  margin-top: 40px;
 }
 
 /* Price range */
@@ -819,12 +824,9 @@ input:focus {
   min-width: 568px;
 }
 
-.button-more {
-  padding: 4px 16px 4px 17px;
-}
-
-.button-book {
-  padding: 4px 17px 4px 16px;
+.button-hotel-description {
+  padding: 4px 16px;
+  font-weight: bold;
 }
 
 /* Footer */
@@ -867,50 +869,28 @@ input:focus {
   padding: 0px;
 }
 
-.social-list li {
+.social-list .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 6px;
   height: 48px;
   width: 48px;
   background-color: var(--basic-blue-light);
 }
 
-.social-list li:last-child {
+.social-list .item:last-child {
   margin-right: 0px;
 }
 
-.social-list li:hover {
+.social-list .item:hover {
   background-color: var(--basic-blue);
 }
 
-.social-list li:active {
+.social-list .item:active {
   color: var(--basic-white-opacity);
   background-color: var(--basic-blue-dark);
 }
-
-.twitter {
-  margin-top: 16px;
-  margin-left: 15px;
-  margin-right: 14px;
-  margin-bottom: 15px;
-  width: 17px;
-  height: 17px;
-}
-
-.fb {
-  margin: 13px 15px;
-  width: 17px;
-  height: 17px;
-}
-
-.youtube {
-  margin: 14px 15px;
-  width: 17px;
-  height: 17px;
-}
-
-/* .contacts {
-  margin-top: 23px;
-} */
 
 .contacts a {
   color: var(--basic-black);
