@@ -327,6 +327,10 @@ input:focus {
 }
 
 /* Search form */
+.hotel-search {
+  position: relative;
+}
+
 .hotel-search-form {
   width: 568px;
   height: 395px;
@@ -342,6 +346,8 @@ input:focus {
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
+  position: absolute;
+  z-index: 3;
 }
 
 .search-date-input {
@@ -807,9 +813,10 @@ input:focus {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  padding: 30px 125px;
+  padding: 30px 0;
   display: inline-block;
   vertical-align: top;
+  min-width: 568px;
 }
 
 .button-more {
