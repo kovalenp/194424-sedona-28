@@ -939,7 +939,8 @@ a {
   z-index: -1;
   width: 1200px;
   height: 594px;
-  background-color: var(--basic-gray);
+  background-image: url(../img/map.png);
+  border: none;
 }
 
 .main-footer-links {
@@ -1056,4 +1057,25 @@ a {
 
 .academy-logo:active path {
   fill: var(--gray-active);
+}
+
+/* Form animation */
+
+.show-none {
+  display: none;
+}
+
+.show {
+  display: flex;
+  animation: slide 1s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-86px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
