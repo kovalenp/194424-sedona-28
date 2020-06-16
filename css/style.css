@@ -124,7 +124,6 @@ a {
 
 .site-navigation-left li,
 .site-navigation-right li {
-  padding-top: 14px;
   padding: 0 67px;
 }
 
@@ -281,9 +280,7 @@ a {
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0;
+  margin: 0 auto;
   margin-top: 47px;
 }
 
@@ -314,9 +311,7 @@ a {
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0;
+  margin: 0 auto;
   margin-top: 28px;
 }
 
@@ -398,7 +393,10 @@ a {
   background-color: var(--basic-gray-light);
   border: none;
   box-sizing: border-box;
-  padding: 6px 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 40px;
   text-transform: uppercase;
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-style: normal;
@@ -409,17 +407,25 @@ a {
 }
 
 .search-date-input input::placeholder {
-  color: var(--basic-black);
+  color: var(--basic-black-opacity);
+}
+
+.search-persons-control input::placeholder {
+  color: var(--basic-black-opacity);
+  text-align: right;
 }
 
 .search-date-input input:focus,
-.search-date-input input:focus:hover {
+.search-date-input input:focus:hover,
+.search-persons-control input:focus,
+.search-persons-control input:focus:hover {
   background-color: var(--basic-white);
   border: 2px solid var(--border);
   box-sizing: border-box;
 }
 
-.search-date-input input:hover {
+.search-date-input input:hover,
+.search-persons-control input:hover {
   background-color: var(--gray-hover);
 }
 
@@ -469,18 +475,12 @@ a {
   width: 38px;
   border: none;
   background-color: var(--basic-gray-light);
-  text-align: center;
   font-family: "PT Sans", "Tahoma", sans-serif;
   text-transform: uppercase;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  text-align: right;
-}
-
-.search-persons-control input::placeholder {
-  color: var(--basic-black);
   text-align: right;
 }
 
@@ -837,18 +837,6 @@ a {
   background: var(--basic-white);
 }
 
-/* .range-toggle {
-  position: absolute;
-  top: -9px;
-  width: 4px;
-  height: 4px;
-  background: var(--gray-active);
-  border: 8px solid var(--basic-white);
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer;
-} */
-
 .range-toggle {
   position: absolute;
   top: -0.7em;
@@ -951,6 +939,7 @@ a {
   z-index: -1;
   width: 1200px;
   height: 594px;
+  background-color: var(--basic-gray);
 }
 
 .main-footer-links {
@@ -1015,6 +1004,11 @@ a {
 .social-list .item:active {
   color: var(--basic-white-opacity);
   background-color: var(--basic-blue-dark);
+}
+
+.social-list .item:active img {
+  opacity: 0.3;
+  mix-blend-mode: normal;
 }
 
 .contacts {
