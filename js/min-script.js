@@ -8,7 +8,7 @@ modal.classList.add("show-none"),
       checkIn.focus();
   }),
   document.addEventListener("click", function (t) {
-    var o = modal.contains(t.target),
+    let o = modal.contains(t.target),
       e = modalButton.contains(t.target);
     o || e || modal.classList.remove("show");
   });

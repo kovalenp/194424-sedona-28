@@ -11,8 +11,8 @@ modalButton.addEventListener("click", function (evt) {
 });
 
 document.addEventListener("click", function (evt) {
-  var isClickInsideModal = modal.contains(evt.target);
-  var isClickInsideModalButton = modalButton.contains(evt.target);
+  let isClickInsideModal = modal.contains(evt.target);
+  let isClickInsideModalButton = modalButton.contains(evt.target);
   if (!isClickInsideModal && !isClickInsideModalButton) {
     modal.classList.remove("show");
   }
