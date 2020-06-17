@@ -497,14 +497,19 @@ a {
   cursor: pointer;
   background-color: var(--basic-gray-light);
   color: var(--gray-icon);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.search-persons-button:hover {
-  color: var(--basic-black);
+.search-persons-button:hover path,
+.search-persons-button:hover rect {
+  fill: var(--basic-black);
 }
 
-.search-persons-button:active {
-  color: var(--basic-blue-light);
+.search-persons-button:active path,
+.search-persons-button:active rect {
+  fill: var(--basic-blue-light);
 }
 
 .search-button {
@@ -526,6 +531,7 @@ a {
 .filter-background {
   background-image: url(../img/background_filter.jpg);
   background-size: 100% 100%;
+  background-color: var(--basic-brown);
   width: 1200px;
   min-height: 217px;
 }
